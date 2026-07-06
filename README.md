@@ -10,6 +10,63 @@ Copyright © 2016 ‐ 2023, Warren C. Pratt, NR0V
 
 ## Release Notes
 
+2.00 2026-07-01
+
+> [!IMPORTANT]
+> ### This is a major release with many new functions
+
+* **PureSignal 3.0**
+
+  * New NURBS internal data structures and calibration algorithms.
+  * Improved robustness to handle systems with significant memory effects, noisy feedback data, low bias, over-drive situations, and other difficult conditions.
+  * Simpler setup and control.
+
+* **Free-curve Control of Equalizers, CFC, and Post-equalizer**
+
+  * Shape audio response and compression with complete control of response curves from linear to 16th degree.
+  * Virtually unlimited control points with weights.
+  * Provides graphical output data for display of filter response in the console.
+
+* **Phase Rotator Pre/post Asymmetry Measurement**
+
+  * Measures symmetry of the audio pre and post Phase Rotator.
+  * Provides graphical output data for a pre/post Asymmetry Display in the console.
+
+* **Phase Rotator Automatic Optimizer**
+
+  * Uses the new asymmetry measurement function to automatically optimize phase rotator settings for maximum symmetry.
+
+* **Broadcast FM Stereo Demodulator**
+
+  * High-quality FM analog demodulation with squelch and stereo indicator.
+
+* **Receive Input Decimator**
+
+  * Improved bandwidth.
+  * Increased alias rejection.
+  * Supports input rates extending up to 6144 KHz.
+
+* Continued CW APF Improvements
+
+* **WDSP Reference Manual Appendices**
+
+  * Three new appendices of interest to both operators and developers.
+    1. Higher-Degree Curve Interpolation (NURBS/B-Spline).
+    2. Phase Response in Audio Filters (linear phase vs. minimum phase).
+    3. The Transmit Audio Chain (each stage is described, how it works, and how to use it effectively).
+
+> [!NOTE]
+> FFTW Wisdom will be recomputed for this version of WDSP.
+
+1.29 2026-01-21
+
+Added new filter options to the CW audio peak filter (APF): DoublePole, Matched, and Gaussian.
+
+1.28 2025-10-21
+
+Minimum Phase filter caching problem resolved and added back in.
+Added impulse response generation for Gaussian filters for future testing and potential inclusion in the receiver.
+
 1.27 2025-11-01
 
 ### Minimum phase filter responses were improperly cached--this has been removed.
