@@ -10,6 +10,20 @@ Copyright © 2016 ‐ 2023, Warren C. Pratt, NR0V
 
 ## Release Notes
 
+2.10 2026-09-04
+
+* Deep Neural Network Noise Reduction (NNR) - minimal UI.
+
+   * Added a second 'Premium' neural model, choices are now 'Standard' or 'Premium'.
+   * The Premium model requires significant CPU resources. It may not be suitable for Pi CPUs.
+   * CPU performance profiling code is included in this release for developers.
+   * Testing has demonstrated favorable results compared to DeepFilterNet3 and RNNoise.
+
+* PureSignal:  Algorithm tuning and performance tuning - no UI changes.
+* Performance improvements in Filter Generation - no UI changes.
+* Auto-generated wdsp.h - let me know if there are bugs or what should be added.
+* New Appendix D on Predistortion and PureSignal in the WDSP Reference Manual.
+
 2.00 2026-07-01
 
 > [!IMPORTANT]
